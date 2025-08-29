@@ -2,35 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>JoyBox Game Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JoyBox Game Studio — creators of Save Dot.">
+  <title>Joybox Game Studio</title>
+  <link rel="icon" href="data:,">
   <style>
-    body{font:16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial; margin:0; padding:40px; background:#0b0f1a; color:#eaf0ff}
-    a{color:#7c5cff; text-decoration:none} a:hover{text-decoration:underline}
-    .wrap{max-width:800px; margin:0 auto}
-    .card{border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:20px; background:#12182a}
-    code{background:rgba(255,255,255,.06); padding:3px 6px; border-radius:6px}
-    button{padding:8px 12px; border-radius:8px; border:1px solid rgba(255,255,255,.2); background:rgba(255,255,255,.08); color:#fff}
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif; line-height: 1.5; margin: 2rem; max-width: 70ch; }
+    code { background: #f2f4f8; padding: .15rem .35rem; border-radius: .3rem; }
+    a { text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <h1>JoyBox Game Studio</h1>
-    <p>Home of <strong>Save Dot</strong>. Visit the game page: <a href="https://joyboxgamestudio.github.io/SaveDotPAGE/">Save Dot</a></p>
-
-    <div class="card">
-      <h2>app-ads.txt (live at <a href="/app-ads.txt">/app-ads.txt</a>)</h2>
-      <p>Place this at the root of your developer website:</p>
-      <p><code id="ads">google.com, pub-6904674660678235, DIRECT, f08c47fec0942fa0</code></p>
-      <p><button id="copy">Copy</button></p>
-    </div>
-  </div>
-  <script>
-    document.getElementById('copy').onclick = async () => {
-      const text = document.getElementById('ads').innerText.trim();
-      try { await navigator.clipboard.writeText(text); alert('Copied!'); } catch(e){ alert('Select and copy manually.'); }
-    };
-  </script>
+  <h1>Joybox Game Studio</h1>
+  <p>This is the root site used to host <code>app-ads.txt</code> for our apps.</p>
+  <p>Find it at <a href="/app-ads.txt">/app-ads.txt</a>.</p>
+  <footer><small>&copy; 2025 Joybox Game Studio</small></footer>
 </body>
 </html>
